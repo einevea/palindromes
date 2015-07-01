@@ -4,11 +4,12 @@
 
 case class Palindrome(str:String, index: Int){
   lazy val length = str.length
+  lazy val end = index + length
 }
 
 object Palindrome {
 
-  def isPalindrome(str:String): Boolean ={
-    !str.isEmpty && str == str.reverse
+  def isPalindrome(str:Seq[Char]): Boolean ={
+    str.length > 1 && str == str.reverse
   }
 }
