@@ -6,9 +6,12 @@ palindromes, report the palindrome, start index and length, in descending order 
 
 2. Example
 Given the input string: sqrrqabccbatudefggfedvwhijkllkjihxymnnmzpop , the output should be:
-- Text: hijkllkjih, Index: 23, Length: 10
-- Text: defggfed, Index: 13, Length: 8
-- Text: abccba, Index: 5 Length: 6
+
+Text: hijkllkjih, Index: 23, Length: 10
+
+Text: defggfed, Index: 13, Length: 8
+
+Text: abccba, Index: 5 Length: 6
 
 3. Technical Hints
 Your solution may be submitted in a language of your choice.
