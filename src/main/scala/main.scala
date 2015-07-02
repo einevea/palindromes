@@ -45,7 +45,7 @@ object Main {
     sorted.take(i).map(f => f._2).toList
   }
 
-  def getBiggestNoRep2(i: Int, palindromes: List[Palindrome]): List[Palindrome] = {
+  def getBiggestNoRepNoInline(i: Int, palindromes: List[Palindrome]): List[Palindrome] = {
     val sorted = getBiggestNoRep(palindromes)
 
     @tailrec
@@ -79,7 +79,7 @@ object Main {
        })
 
       println("\nOption 2:")
-      getBiggestNoRep2(3, palindromes).reverse.foreach(p => {
+      getBiggestNoRepNoInline(3, palindromes).reverse.foreach(p => {
         println(s"Text: ${p.str}, Index: ${p.index}, Length: ${p.length}")
       })
     })
